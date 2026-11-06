@@ -1,0 +1,28 @@
+{
+  "name": "bermuda-wdk-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Private balances for a WDK wallet on Plasma testnet with Bermuda: shield, pay privately with encrypted memos, unshield",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "new-wallet": "node src/new-wallet.js",
+    "drop-in": "node src/drop-in.js",
+    "balance": "node src/demo.js balance",
+    "shield": "node src/demo.js shield",
+    "transfer": "node src/demo.js transfer",
+    "history": "node src/demo.js history",
+    "unshield": "node src/demo.js unshield",
+    "inspect": "node src/demo.js inspect",
+    "sweep": "node src/demo.js sweep"
+  },
+  "dependencies": {
+    "@bermuda/wdk-wallet-evm-bermuda": "github:BermudaBay/wdk-wallet-evm-bermuda#c61ea036c6bf427420d9215a819cf9db95cb0164",
+    "@tetherto/wdk-wallet": "1.0.0-beta.17",
+    "@tetherto/wdk-wallet-evm": "1.0.0-beta.17",
+    "dotenv": "16.4.7",
+    "ethers": "6.17.0"
+  }
+}
